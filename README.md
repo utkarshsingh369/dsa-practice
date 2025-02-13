@@ -1,1 +1,1 @@
-# STRIVERS-SHEET
+# DSA Practice
