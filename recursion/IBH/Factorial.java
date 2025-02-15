@@ -1,4 +1,4 @@
-package recursion;
+package recursion.IBH;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package recursion;
+package recursion.IBH;
 
 public class KthSymbolInGrammar {
     public int kthGrammar(int n, int k) {

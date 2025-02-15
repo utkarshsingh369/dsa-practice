@@ -1,4 +1,4 @@
-package recursion;
+package recursion.IBH;
 
 // no of steps can directly calculated by 2^n - 1
 

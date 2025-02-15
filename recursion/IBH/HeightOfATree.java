@@ -1,4 +1,4 @@
-package recursion;
+package recursion.IBH;
 
 public class HeightOfATree {
     private static class Tree{
