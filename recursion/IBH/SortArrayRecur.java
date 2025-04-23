@@ -5,22 +5,22 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SortArrayRecur {
-    private static void insertAtCorrectPosition(List<Integer> list, int popped){
-        if(list.isEmpty() || list.get(list.size()-1)<=popped){
-            list.add(popped);
+    private static void insertAtCorrectPosition(List<Integer> list, int elem){
+        if(list.isEmpty() || list.get(list.size()-1)<=elem){
+            list.add(elem);
             return;
         }
-        int temp= list.remove(list.size()-1);
-        insertAtCorrectPosition(list, popped);
+        int temp = list.remove(list.size()-1);
+        insertAtCorrectPosition(list, elem);
         list.add(temp);
     }
     private static void sort(List<Integer> list){
         if(list.size()==1){
             return;
         }
-        int popped=list.remove(list.size()-1);
+        int lastElem = list.remove(list.size()-1);
         sort(list);
-        insertAtCorrectPosition(list, popped);
+        insertAtCorrectPosition(list, lastElem);
     }
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(Arrays.asList(7, 3, 4, 1, 54, 5, 3, 2));
